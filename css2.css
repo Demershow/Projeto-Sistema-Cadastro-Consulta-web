@@ -1,0 +1,14 @@
+body, ul{
+    background-color: black;
+    margin:0px;
+    padding: 0px;
+}
+
+.elemento{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

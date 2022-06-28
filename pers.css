@@ -1,0 +1,123 @@
+body, ul{
+    background-color: black;
+    margin:0px;
+    padding: 0px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+a:hover{
+    background: rgba(0, 0, 0, 0.411);
+    
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#meio{
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+#header{
+    box-sizing: border-box;
+    background-color: #9C9C9C; 
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+}
+
+.centro{
+    text-align: center;
+    font-size: 60px;
+}
+
+.conteudoHeader{
+    color: white;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 60px;
+    margin-left: 2.3%;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+.container{
+    position: relative;
+    height: 70vh;
+    /* background-color: #fff; */
+    margin-top: 100px;
+
+}
+
+
+.elemento{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#btnMenu{
+    display: none;
+}
+
+@media  (max-width: 10000px){
+    #btnMenu{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #9c9c9c;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
+
+}
